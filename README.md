@@ -52,9 +52,8 @@ You have 2 options
 1. Train: To train the model on the dataset, make sure to download the dataset and follow the repo structure as:
 
 
-```
 The repo structure should be as follows:
-```
+```angular2html
 RoadNetworkExtraction-MoveHack
 |_ mass_roads/
 |  |_ train/
@@ -91,6 +90,7 @@ RoadNetworkExtraction-MoveHack
 |_ ....
 |_ (other files)
 ```
+
 Now, start training with the following command- (NOTE: This will first set up the necessary folders and convert .tiff files to png and save them. Then it will start trained the u-net model for num_epochs(default is 1) and with cycle_len(default is 4). The trained model will be saved to the models/ directory. The trained model achieves a mask accuracy of 96% on test set.)
 
 ```bash
