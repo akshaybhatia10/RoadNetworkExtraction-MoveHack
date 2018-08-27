@@ -104,13 +104,13 @@ usage: main.py  [--data_dir] [--learning_rate] [--mode]
                 [--test_img]
 
 Arguments:
-  --data_dir		Path to the dataset(DEFAULT mass_roads/)
-  --mode 	    	One of train or test(DEFAULT test)
-  --learning_rate        learning rate(DEFAULT 0.1)
-  --model_dir            model file dir(DEFAULT models)
-  --test_img             Path to test image for inference(DEFAULT test_images/10378780_15.png)
-  --num_epoch            number of epcohs(DEFAULT 1)
-  --cycle_len            cycle len(DEFAULT 4)
+  --data_dir		 Path to the dataset(REQUIRED if mode is train, DEFAULT mass_roads/)
+  --mode 	    	 One of train or test(DEFAULT test)
+  --learning_rate        learning rate(OPTIONAL, DEFAULT 0.1)
+  --model_dir            Path to save model files(OPTIONAL, DEFAULT models)
+  --test_img             Path to test image for inference(OPTIONAL, DEFAULT test_images/10378780_15.png)
+  --num_epoch            number of epochs(OPTIONAL, DEFAULT 1)
+  --cycle_len            cycle length(OPTIONAL, DEFAULT 4)
 ```
 
 2. Test: To test the pretrained model available in the models directory(with mask accuracy score of 96%), run the following- 
@@ -119,5 +119,5 @@ Arguments:
 python main.py --mode test
 ```
 
-This will save 3 different images the the current folder- 1024x1024 version of original images, 1024x1024 generated mask image(output of the model), 1024x1024 mask overlayed on original image.
+This will save 3 different images in the current folder- a 1024x1024 version of original image, 1024x1024 generated mask image(output of the model), 1024x1024 mask overlayed on original image.
 
