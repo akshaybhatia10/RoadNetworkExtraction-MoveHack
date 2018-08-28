@@ -17,7 +17,8 @@ def convert_mask_img(old_path, new_path, i):
     output_file = '{}/{}.png'.format(new_path, i)
     Image.open(input_file).resize((1024,1024)).save(output_file)
 
-def convert_and_resize(base_path='mass_roads'):
+def convert_and_resize(base_path='mass_roads', new_base_path = 'mass_roads_new'
+):
 	
 	print ('Setting up new directories')
 	new_base_path = 'mass_roads_new'
@@ -88,8 +89,6 @@ def convert_and_resize(base_path='mass_roads'):
 	for i in test_satellite_ids:
 		convert_mask_img(test_mask, test_mask_new, i)
 	print ('Done')
-
-	return new_base_path
 
 class MatchedFilesDataset(FilesDataset):
     def __init__(self, fnames, y, transform, path):
