@@ -174,9 +174,9 @@ This will output 3 different images in the current working directory- a 1024x102
 
 ## Build on Google Colab
 
-Google Colab lets us build the project without installing it locally. Simply check out the colab notebook for the project [here](https://colab.research.google.com/drive/1spd4vyE0pRRPNfP_BKw25voOJSvvfK_g)
+Google Colab lets us build the project without installing it locally. Simply check out the colab notebook for the project [here](https://colab.research.google.com/drive/1spd4vyE0pRRPNfP_BKw25voOJSvvfK_g).
 
-To get started, open the notebook in playground mode and run the cells. To train, follow with [Quick start](#train).
+To get started, open the notebook in playground mode and run the cells(You must be logged in using your google account and provide authorization). To train, follow with [Quick start](#train).
 
 ## References 
 
